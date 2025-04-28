@@ -11,7 +11,6 @@ sealed trait Token:
     case UnitToken(c) => Empty
     case Empty => Empty
 
-
   def isMatch(s: String): Boolean = this match
     case BytePair(first, second) => (0 until s.length).exists {
       i =>
@@ -21,15 +20,26 @@ sealed trait Token:
     case UnitToken(c) => c.toString == s
     case Empty => s == null || s.isEmpty
 
-
 case class BytePair(first: Token, second: Token) extends Token
-
-case class UnitToken(c: Char) extends Token
+case class UnitToken(c: Byte) extends Token
 case object Empty extends Token
 
 object Token:
    extension(t: Token) def stringify: String =
      t match
        case BytePair(first, second) => s"${first.stringify}${second.stringify}"
-       case UnitToken(c) => s"$c"
+       case UnitToken(c) => s"${new String(Array(c))}"
        case Empty => ""
+   extension(t: Token) def bytefy: Array[Byte] =
+     t match
+       case BytePair(first, second) => first.bytefy ++ second.bytefy
+       case UnitToken(c) => Array(c)
+       case Empty => Array.empty
+
+   def makeToken(xs: Array[Byte]): Token = {
+      xs match {
+        case arrBytes if arrBytes.isEmpty => Empty
+        case arrBytes if arrBytes.length == 1 => UnitToken(arrBytes.head)
+        case arrBytes => BytePair(UnitToken(arrBytes.head), makeToken(arrBytes.tail))
+      }
+   }
