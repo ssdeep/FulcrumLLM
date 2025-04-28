@@ -22,7 +22,7 @@ Basic Benchmarking that includes
   The aim is to get to 0 mismatches
 
 ### Results
-
+#### Benchmarks for the Scala based Fulcrum Tokenizer
 ```bash
 Loading tokenizer file 100% │██████████████│ 199998/199998 (0:00:01 / 0:00:00) 
 Processing text lines 100% │█████████████│ 2052699/2052699 (0:02:32 / 0:00:00) 
@@ -30,4 +30,22 @@ Total tokens: 40929433
 Time taken: 152.867 seconds
 Throughput: 267745.21 tokens/sec
 Incorrect tokens counts: 0
+```
+
+#### Benchmarks for Python based OpenAI Tiktoken and Huggingface gpt2 tokenizer 
+```bash
+tokenizer.json: 100%|██████████████████████| 1.36M/1.36M [00:00<00:00, 8.91MB/s]
+Benchmarking Tiktoken (o200k_base): 100%|█| 2052699/2052699 [01:00<00:00, 33816.
+--- Tiktoken (o200k_base) ---
+Total tokens: 41073977
+Time taken: 60.702 seconds
+Throughput: 676653.81 tokens/sec
+Incorrect tokenizations: 0
+
+Benchmarking Huggingface (gpt2): 100%|█| 2052699/2052699 [02:59<00:00, 11412.02i
+--- Huggingface (gpt2) ---
+Total tokens: 40673536
+Time taken: 179.872 seconds
+Throughput: 226124.85 tokens/sec
+Incorrect tokenizations: 0
 ```
