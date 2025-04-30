@@ -3,6 +3,21 @@ FulcrumLLM is an attempt at creating comprehensive libraries and tooling
 in Scala for LLM/GenAI use cases. This is intended as an educational and training purposes 
 to aid in a self-guided programming for learning how to build an LLM from scratch.
 
+The goal of this project is to have a self contained repository of all the required tooling and libraries that are typically 
+not available in scala for ML systems, more specifically all that is required to build an LLM from scratch
+
+## Reference 
+1. This repository is closely following Sebastian Raschka's text book "Building A Large Language Model From Scratch"
+More information about this book can be found here
+https://www.manning.com/books/build-a-large-language-model-from-scratch
+
+2. Rashka's book is intended for python programmer and much of the content relies on familiarity of or introduction to the use of 
+PyTorch libraries. We substitute these with a Scala implementation of PyTorch called Storch. More information about Storch and 
+   it's limitations can be found here https://storch.dev/
+
+I will list out more references as I make progress with this course and where necessary will be building substitution tools 
+   and libraries as part of the FulcrumLLM project.
+
 
 ## Tokenizer 
 The Tokenizer built in this project is a Byte-Pair Encoding tokenizer that uses a simple

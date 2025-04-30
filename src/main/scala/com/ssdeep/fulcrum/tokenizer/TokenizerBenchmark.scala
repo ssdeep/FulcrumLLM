@@ -13,9 +13,7 @@ object TokenizerBenchmark {
 
     val texts = Files.readAllLines(Paths.get(path)).asScala.toList
     pbBuilder.setInitialMax(texts.size)
-    val tokenizer = new Tokenizer() {
-    }
-    tokenizer.buildTokenizerFromRaw("/Users/dooby1/Downloads/o200k_base.tiktoken")
+    val tokenizer =  Tokenizer.buildDefaulto200kBase
 
     val startTime = System.nanoTime()
     var totalTokens = 0
