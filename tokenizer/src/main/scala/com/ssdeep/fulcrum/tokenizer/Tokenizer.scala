@@ -72,7 +72,7 @@ object Tokenizer:
     }
   }
 
-  def buildDefaulto200kBase: Tokenizer =
+  def buildDefaultO200kBase: Tokenizer =
     buildTokenizerFromRaw("o200k_base.tiktoken")
 
   def buildTokenizerFromRaw(file: String): Tokenizer =
@@ -165,6 +165,9 @@ case class Tokenizer(tokenTrieRoot: TokenTrie, tokenIdMap: Map[Long, Token]):
             encodedSoFar = encodedSoFar ++ consumedSoFar.flatMap(p => inverseTokenMap.get(UnitToken(p)))
             consumedSoFar = Array()
             candidateEncoded = None
+            tokenTrieRoot
+          case Some(_) =>
+            //
             tokenTrieRoot
         }
 

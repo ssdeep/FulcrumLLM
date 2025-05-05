@@ -1,5 +1,7 @@
 package com.ssdeep.fulcrum.tokenizer
 
+import scala.annotation.tailrec
+
 /**
  * Token trait is the fundamental unit of LLMs and is broadly divided into three sub-types
  * - BytePair(first, second) => is a token made up of two parts, first and second, each can be a token
@@ -9,8 +11,7 @@ package com.ssdeep.fulcrum.tokenizer
 sealed trait Token:
   lazy val head: Token = this match
     case BytePair(first, second) => first.head
-    case a @ UnitToken(c) => a
-    case Empty => Empty
+    case a => a
   
   lazy val tail: Token = this match
     case BytePair(first: UnitToken, second) => second
@@ -22,6 +23,7 @@ sealed trait Token:
     
   def isMatch(s: String): Boolean =
     this.stringify == s
+  def +(second: Token): Token = BytePair(this, second)
 
 case class BytePair(first: Token, second: Token) extends Token
 case class UnitToken(c: Byte) extends Token
@@ -40,6 +42,6 @@ object Token:
       xs match {
         case arrBytes if arrBytes.isEmpty => Empty
         case arrBytes if arrBytes.length == 1 => UnitToken(arrBytes.head)
-        case arrBytes => BytePair(UnitToken(arrBytes.head), makeToken(arrBytes.tail))
+        case arrBytes => UnitToken(arrBytes.head) + makeToken(arrBytes.tail)
       }
    }
