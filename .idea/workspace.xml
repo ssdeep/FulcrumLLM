@@ -38,12 +38,7 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="FulcrumLLM" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -89,7 +84,7 @@
   "keyToString": {
     "Application.Main.executor": "Debug",
     "Application.TokenizerBenchmark.executor": "Run",
-    "Application.com.ssdeep.fulcrum.Main (1).executor": "Run",
+    "Application.com.ssdeep.fulcrum.Main (1).executor": "Debug",
     "Application.com.ssdeep.fulcrum.Main.executor": "Debug",
     "Application.com.ssdeep.fulcrum.com.ssdeep.fulcrum.tokenizer.main.executor": "Debug",
     "Application.com.ssdeep.fulcrum.tokenizer.main.executor": "Debug",
@@ -101,15 +96,23 @@
     "NIXITCH_NIX_PROFILES": "",
     "NIXITCH_NIX_REMOTE": "",
     "NIXITCH_NIX_USER_PROFILE_DIR": "",
-    "Python.ExternalBenchmarks (1).executor": "Debug",
+    "Python.ExternalBenchmarks (1).executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "ScalaTest.TokenizerSuite.String should encode and decode without loss.executor": "Run",
+    "ScalaTest.TokenizerSuite.executor": "Run",
     "git-widget-placeholder": "ssdeep/tokenizer",
     "last_opened_file_path": "/Users/dooby1/storch/FulcrumLLM/build.sbt",
-    "project.structure.last.edited": "Modules",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -120,7 +123,7 @@
       <recent name="$PROJECT_DIR$/src/main/scala/com/ssdeep/fulcrum" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="ScalaTest.TokenizerSuite.String should encode and decode without loss">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -140,6 +143,7 @@
     <configuration name="TokenizerBenchmark" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.ssdeep.fulcrum.tokenizer.TokenizerBenchmark" />
       <module name="FulcrumLLM.tokenizer" />
+      <option name="VM_PARAMETERS" value="-Xmx20g" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,14 +151,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.ssdeep.fulcrum.Main (1)" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.ssdeep.fulcrum.Main" />
-      <module name="FulcrumLLM.tokenizer" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -191,6 +187,65 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="TokenizerSuite" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="FulcrumLLM.tokenizer" />
+      <option name="VMParameters" value="" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="alternativeJrePath" />
+      <option name="alternativeJrePathEnabled" value="false" />
+      <option name="classpathModifications">
+        <list />
+      </option>
+      <option name="envFilePaths">
+        <list />
+      </option>
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Class" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <option name="testClassPath" value="com.ssdeep.fulcrum.tokenizer.TokenizerSuite" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TokenizerSuite.String should encode and decode without loss" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="FulcrumLLM.tokenizer" />
+      <option name="VMParameters" value="" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="alternativeJrePath" />
+      <option name="alternativeJrePathEnabled" value="false" />
+      <option name="classpathModifications">
+        <list />
+      </option>
+      <option name="envFilePaths">
+        <list />
+      </option>
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <option name="testClassPath" value="com.ssdeep.fulcrum.tokenizer.TokenizerSuite" />
+      <option name="testName" value="String should encode and decode without loss" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -204,15 +259,17 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.TokenizerBenchmark" />
-      <item itemvalue="Application.com.ssdeep.fulcrum.Main (1)" />
       <item itemvalue="Python.ExternalBenchmarks (1)" />
+      <item itemvalue="ScalaTest.TokenizerSuite" />
+      <item itemvalue="ScalaTest.TokenizerSuite.String should encode and decode without loss" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="ScalaTest.TokenizerSuite.String should encode and decode without loss" />
+        <item itemvalue="ScalaTest.TokenizerSuite" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.com.ssdeep.fulcrum.Main (1)" />
-        <item itemvalue="Application.TokenizerBenchmark" />
         <item itemvalue="Python.ExternalBenchmarks (1)" />
+        <item itemvalue="Application.TokenizerBenchmark" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +278,27 @@
     <option name="scala3DisclaimerShown" value="true" />
     <option name="showArgumentsToByNameParams" value="true" />
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="66e1b0ad-9850-4350-ac17-3cb11f84612e" name="Changes" comment="" />
+      <created>1746480503495</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746480503495</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -247,18 +324,63 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/SimpleAttention.scala</url>
-          <line>25</line>
+          <line>51</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/SimpleAttention.scala</url>
-          <line>30</line>
+          <line>56</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/SimpleAttention.scala</url>
-          <line>32</line>
+          <line>66</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/SimpleAttention.scala</url>
+          <line>62</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/SimpleAttention.scala</url>
+          <line>61</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/SimpleAttention.scala</url>
+          <line>59</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/SimpleAttention.scala</url>
+          <line>64</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/SimpleAttention.scala</url>
+          <line>46</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/SimpleAttention.scala</url>
+          <line>47</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/SimpleAttention.scala</url>
+          <line>48</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/SimpleAttention.scala</url>
+          <line>31</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/SimpleAttention.scala</url>
+          <line>63</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
