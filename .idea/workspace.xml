@@ -38,12 +38,24 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="FulcrumLLM" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Package Object" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,6 +65,8 @@
     <setting file="jar://$USER_HOME$/.asdf/installs/java/corretto-20.0.2.9.1/lib/src.zip!/java.base/java/io/Writer.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/.asdf/installs/java/corretto-20.0.2.9.1/lib/src.zip!/java.base/java/lang/String.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/.asdf/installs/java/corretto-20.0.2.9.1/lib/src.zip!/java.base/java/util/stream/Stream.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.sbt/boot/scala-2.12.20/org.scala-sbt/sbt/1.10.11/librarymanagement-core_2.12-1.10.4.jar!/sbt/librarymanagement/DependencyBuilders.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/bytedeco/pytorch/2.1.2-1.5.10/pytorch-2.1.2-1.5.10-sources.jar!/org/bytedeco/pytorch/Tensor.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native-core_3/4.1.0-M8/json4s-native-core_3-4.1.0-M8-sources.jar!/org/json4s/native/Document.scala" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native-core_3/4.1.0-M8/json4s-native-core_3-4.1.0-M8-sources.jar!/org/json4s/native/JsonMethods.scala" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native-core_3/4.1.0-M8/json4s-native-core_3-4.1.0-M8-sources.jar!/org/json4s/native/Printer.scala" root0="SKIP_INSPECTION" />
@@ -62,7 +76,10 @@
     <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.15/scala-library-2.13.15-sources.jar!/scala/collection/mutable/Growable.scala" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.15/scala-library-2.13.15-sources.jar!/scala/io/Codec.scala" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.15/scala-library-2.13.15-sources.jar!/scala/io/Source.scala" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/s01.oss.sonatype.org/content/repositories/snapshots/dev/storch/core_3/0.0-2dfa388-SNAPSHOT/core_3-0.0-2dfa388-SNAPSHOT-sources.jar!/torch/Tensor.scala" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/s01.oss.sonatype.org/content/repositories/snapshots/dev/storch/core_3/0.0-2dfa388-SNAPSHOT/core_3-0.0-2dfa388-SNAPSHOT-sources.jar!/torch/nn/modules/sparse/Embedding.scala" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/s01.oss.sonatype.org/content/repositories/snapshots/dev/storch/core_3/0.0-2dfa388-SNAPSHOT/core_3-0.0-2dfa388-SNAPSHOT-sources.jar!/torch/nn/package.scala" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/s01.oss.sonatype.org/content/repositories/snapshots/dev/storch/core_3/0.0-2dfa388-SNAPSHOT/core_3-0.0-2dfa388-SNAPSHOT-sources.jar!/torch/ops/PointwiseOps.scala" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -111,7 +128,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -123,7 +140,7 @@
       <recent name="$PROJECT_DIR$/src/main/scala/com/ssdeep/fulcrum" />
     </key>
   </component>
-  <component name="RunManager" selected="ScalaTest.TokenizerSuite.String should encode and decode without loss">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -265,9 +282,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="ScalaTest.TokenizerSuite.String should encode and decode without loss" />
-        <item itemvalue="ScalaTest.TokenizerSuite" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="ScalaTest.TokenizerSuite" />
+        <item itemvalue="ScalaTest.TokenizerSuite.String should encode and decode without loss" />
         <item itemvalue="Python.ExternalBenchmarks (1)" />
         <item itemvalue="Application.TokenizerBenchmark" />
       </list>
@@ -281,7 +298,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
       </set>
     </attachedChunks>
   </component>
@@ -319,42 +336,42 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/attention/src/main/scala/Main.scala</url>
-          <line>26</line>
+          <line>34</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/SimpleAttention.scala</url>
-          <line>51</line>
+          <line>53</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/SimpleAttention.scala</url>
-          <line>56</line>
+          <line>58</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/SimpleAttention.scala</url>
-          <line>66</line>
+          <line>68</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/SimpleAttention.scala</url>
-          <line>62</line>
+          <line>64</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/SimpleAttention.scala</url>
-          <line>61</line>
+          <line>63</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/SimpleAttention.scala</url>
-          <line>59</line>
+          <line>61</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/SimpleAttention.scala</url>
-          <line>64</line>
+          <line>66</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
@@ -369,7 +386,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/SimpleAttention.scala</url>
-          <line>48</line>
+          <line>50</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
@@ -379,8 +396,63 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/SimpleAttention.scala</url>
-          <line>63</line>
+          <line>65</line>
           <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/WeightedAttention.scala</url>
+          <line>31</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/parameters/ParameterModule.scala</url>
+          <line>15</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/parameters/ParameterModule.scala</url>
+          <line>20</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/WeightedAttention.scala</url>
+          <line>34</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/WeightedAttention.scala</url>
+          <line>35</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/CompactSelfAttention.scala</url>
+          <line>22</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/Main.scala</url>
+          <line>29</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/CompactSelfAttention.scala</url>
+          <line>13</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/CompactSelfAttention.scala</url>
+          <line>14</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/CompactSelfAttention.scala</url>
+          <line>21</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/Main.scala</url>
+          <line>36</line>
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

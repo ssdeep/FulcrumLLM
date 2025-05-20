@@ -46,6 +46,8 @@ class SimpleAttention(dataset: GPTDatasetV1):
       }.toList
     val rawResultTensor = torch.Tensor.apply(batchTensor)
     val normalzied = torch.softmax(rawResultTensor, dim = 0L, dtype = torch.float32)
+    println("Post normalization")
+    println(normalzied)
     normalzied
 
   def getAttention =
@@ -60,9 +62,9 @@ class SimpleAttention(dataset: GPTDatasetV1):
                    val processedBatch = processBatch(inputEmbeddings(i))
                    println(s"Input embedding ${inputEmbeddings(i)}")
                    println(s"Processed batch: $processedBatch")
-                   val dotProduct = getContextVector(processedBatch, inputEmbeddings(i))
-                   println(s"dot product: $dotProduct")
-                   processedBatch
+                   val contextVector = getContextVector(processedBatch, inputEmbeddings(i))
+                   println(s"dot product: $contextVector")
+                   contextVector
                }
 
       }

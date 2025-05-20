@@ -10,7 +10,6 @@ class TokenizerSuite extends AnyFlatSpec with ScalaCheckPropertyChecks  {
   "String" should "encode and decode without loss" in {
      forAll {
        (text: String) =>
-         println(s"Running with $text")
          tokenizer.decode(tokenizer.encode(text)) === text
      }
   }

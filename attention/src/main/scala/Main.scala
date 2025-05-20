@@ -1,7 +1,8 @@
-import com.ssdeep.fulcrum.attention.SimpleAttention
+import com.ssdeep.fulcrum.attention.{CausalAttention, CompactSelfAttention, MultiheadAttention, MultiheadAttentionWrapper, SimpleAttention, WeightedAttention}
 import com.ssdeep.fulcrum.core.ClassNameLogger
 import com.ssdeep.fulcrum.embedding.GPTDatasetV1
 import com.ssdeep.fulcrum.tokenizer.Tokenizer
+import org.bytedeco.pytorch.MultiheadAttentionImpl
 import torch.{Float32, Tensor}
 
 import scala.io.Source
@@ -23,7 +24,16 @@ object Main extends ClassNameLogger:
 
     torch.manualSeed(128L)
 
-    val simpleAttention = SimpleAttention(gptDataset)
-    println(simpleAttention.getAttention)
+//    val simpleAttention = WeightedAttention(gptDataset)
+    val (batch, target) = gptDataset.dataLoader.iterator.next()
+    val batchEmbeddings = gptDataset.inputEmbeddings(batch)
+    val causalAttention = new CausalAttention(batchEmbeddings.shape.last, 100, 5)
+    val multiheadAttention = new MultiheadAttention(batchEmbeddings.shape.last, 500, 5)
+    val contextVector = causalAttention.forward(batchEmbeddings)
+    val multiHeadContextVector = multiheadAttention.forward(batchEmbeddings)
+    println("Context Vectors")
+    println(contextVector)
+    println("Multi-headed Context Vectors")
+    println(multiHeadContextVector)
 
 
