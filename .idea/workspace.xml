@@ -32,6 +32,9 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/transformer">
+      <ProjectState />
+    </projectState>
   </component>
   <component name="ExternalProjectsManager">
     <system id="SBT">
@@ -66,20 +69,31 @@
     <setting file="jar://$USER_HOME$/.asdf/installs/java/corretto-20.0.2.9.1/lib/src.zip!/java.base/java/lang/String.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/.asdf/installs/java/corretto-20.0.2.9.1/lib/src.zip!/java.base/java/util/stream/Stream.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/.sbt/boot/scala-2.12.20/org.scala-sbt/sbt/1.10.11/librarymanagement-core_2.12-1.10.4.jar!/sbt/librarymanagement/DependencyBuilders.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/bytedeco/pytorch/2.1.2-1.5.10/pytorch-2.1.2-1.5.10-sources.jar!/org/bytedeco/pytorch/Scalar.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/bytedeco/pytorch/2.1.2-1.5.10/pytorch-2.1.2-1.5.10-sources.jar!/org/bytedeco/pytorch/Tensor.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/bytedeco/pytorch/2.1.2-1.5.10/pytorch-2.1.2-1.5.10.jar!/org/bytedeco/pytorch/global/torch.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native-core_3/4.1.0-M8/json4s-native-core_3-4.1.0-M8-sources.jar!/org/json4s/native/Document.scala" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native-core_3/4.1.0-M8/json4s-native-core_3-4.1.0-M8-sources.jar!/org/json4s/native/JsonMethods.scala" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native-core_3/4.1.0-M8/json4s-native-core_3-4.1.0-M8-sources.jar!/org/json4s/native/Printer.scala" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.15/scala-library-2.13.15-sources.jar!/scala/collection/ArrayOps.scala" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.15/scala-library-2.13.15-sources.jar!/scala/collection/Iterator.scala" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.15/scala-library-2.13.15-sources.jar!/scala/collection/JavaConverters.scala" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.15/scala-library-2.13.15-sources.jar!/scala/collection/mutable/Buffer.scala" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.15/scala-library-2.13.15-sources.jar!/scala/collection/mutable/Growable.scala" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.15/scala-library-2.13.15-sources.jar!/scala/io/Codec.scala" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.15/scala-library-2.13.15-sources.jar!/scala/io/Source.scala" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalacheck/scalacheck_3/1.18.0/scalacheck_3-1.18.0-sources.jar!/org/scalacheck/Gen.scala" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatestplus/scalacheck-1-18_3/3.2.19.0/scalacheck-1-18_3-3.2.19.0.jar!/org/scalatestplus/scalacheck/ScalaCheckDrivenPropertyChecks.tasty" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/s01.oss.sonatype.org/content/repositories/snapshots/dev/storch/core_3/0.0-2dfa388-SNAPSHOT/core_3-0.0-2dfa388-SNAPSHOT-sources.jar!/torch/Tensor.scala" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/s01.oss.sonatype.org/content/repositories/snapshots/dev/storch/core_3/0.0-2dfa388-SNAPSHOT/core_3-0.0-2dfa388-SNAPSHOT-sources.jar!/torch/nn/modules/Module.scala" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/s01.oss.sonatype.org/content/repositories/snapshots/dev/storch/core_3/0.0-2dfa388-SNAPSHOT/core_3-0.0-2dfa388-SNAPSHOT-sources.jar!/torch/nn/modules/container/ModuleList.scala" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/s01.oss.sonatype.org/content/repositories/snapshots/dev/storch/core_3/0.0-2dfa388-SNAPSHOT/core_3-0.0-2dfa388-SNAPSHOT-sources.jar!/torch/nn/modules/linear/Linear.scala" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/s01.oss.sonatype.org/content/repositories/snapshots/dev/storch/core_3/0.0-2dfa388-SNAPSHOT/core_3-0.0-2dfa388-SNAPSHOT-sources.jar!/torch/nn/modules/regularization/Dropout.scala" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/s01.oss.sonatype.org/content/repositories/snapshots/dev/storch/core_3/0.0-2dfa388-SNAPSHOT/core_3-0.0-2dfa388-SNAPSHOT-sources.jar!/torch/nn/modules/sparse/Embedding.scala" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/s01.oss.sonatype.org/content/repositories/snapshots/dev/storch/core_3/0.0-2dfa388-SNAPSHOT/core_3-0.0-2dfa388-SNAPSHOT-sources.jar!/torch/nn/package.scala" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/s01.oss.sonatype.org/content/repositories/snapshots/dev/storch/core_3/0.0-2dfa388-SNAPSHOT/core_3-0.0-2dfa388-SNAPSHOT-sources.jar!/torch/ops/CreationOps.scala" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/s01.oss.sonatype.org/content/repositories/snapshots/dev/storch/core_3/0.0-2dfa388-SNAPSHOT/core_3-0.0-2dfa388-SNAPSHOT-sources.jar!/torch/ops/PointwiseOps.scala" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/s01.oss.sonatype.org/content/repositories/snapshots/dev/storch/core_3/0.0-2dfa388-SNAPSHOT/core_3-0.0-2dfa388-SNAPSHOT-sources.jar!/torch/ops/ReductionOps.scala" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -101,6 +115,7 @@
   "keyToString": {
     "Application.Main.executor": "Debug",
     "Application.TokenizerBenchmark.executor": "Run",
+    "Application.TransformerMain.executor": "Debug",
     "Application.com.ssdeep.fulcrum.Main (1).executor": "Debug",
     "Application.com.ssdeep.fulcrum.Main.executor": "Debug",
     "Application.com.ssdeep.fulcrum.com.ssdeep.fulcrum.tokenizer.main.executor": "Debug",
@@ -116,6 +131,7 @@
     "Python.ExternalBenchmarks (1).executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "ScalaTest.MultiheadAttentionSuite.MultiheadAttention Context Vectors should satisfy dimensionality.executor": "Debug",
     "ScalaTest.TokenizerSuite.String should encode and decode without loss.executor": "Run",
     "ScalaTest.TokenizerSuite.executor": "Run",
     "git-widget-placeholder": "ssdeep/tokenizer",
@@ -125,10 +141,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "configurable.scala.root",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -140,7 +156,7 @@
       <recent name="$PROJECT_DIR$/src/main/scala/com/ssdeep/fulcrum" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.TransformerMain">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -157,10 +173,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TokenizerBenchmark" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.ssdeep.fulcrum.tokenizer.TokenizerBenchmark" />
-      <module name="FulcrumLLM.tokenizer" />
-      <option name="VM_PARAMETERS" value="-Xmx20g" />
+    <configuration name="TransformerMain" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="TransformerMain" />
+      <module name="FulcrumLLM.transformer" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -181,28 +197,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExternalBenchmarks (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="FulcrumLLM" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.13" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/ExternalBenchmarks.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
+    <configuration name="MultiheadAttentionSuite.MultiheadAttention Context Vectors should satisfy dimensionality" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="FulcrumLLM.attention" />
+      <option name="VMParameters" value="" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="alternativeJrePath" />
+      <option name="alternativeJrePathEnabled" value="false" />
+      <option name="classpathModifications">
+        <list />
+      </option>
+      <option name="envFilePaths">
+        <list />
+      </option>
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <option name="testClassPath" value="com.ssdeep.fulcrum.attention.MultiheadAttentionSuite" />
+      <option name="testName" value="MultiheadAttention Context Vectors should satisfy dimensionality" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="TokenizerSuite" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="FulcrumLLM.tokenizer" />
@@ -274,19 +297,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.TransformerMain" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.TokenizerBenchmark" />
-      <item itemvalue="Python.ExternalBenchmarks (1)" />
+      <item itemvalue="ScalaTest.MultiheadAttentionSuite.MultiheadAttention Context Vectors should satisfy dimensionality" />
       <item itemvalue="ScalaTest.TokenizerSuite" />
       <item itemvalue="ScalaTest.TokenizerSuite.String should encode and decode without loss" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TransformerMain" />
+        <item itemvalue="ScalaTest.MultiheadAttentionSuite.MultiheadAttention Context Vectors should satisfy dimensionality" />
+        <item itemvalue="ScalaTest.TokenizerSuite.String should encode and decode without loss" />
         <item itemvalue="Application.Main" />
         <item itemvalue="ScalaTest.TokenizerSuite" />
-        <item itemvalue="ScalaTest.TokenizerSuite.String should encode and decode without loss" />
-        <item itemvalue="Python.ExternalBenchmarks (1)" />
-        <item itemvalue="Application.TokenizerBenchmark" />
       </list>
     </recent_temporary>
   </component>
@@ -320,17 +343,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/tokenizer/src/main/scala/com/ssdeep/fulcrum/Main.scala</url>
+          <url>file://$PROJECT_DIR$/tokenizer/src/main/scala/com/ssdeep/fulcrum/TokenizerMain.scala</url>
           <line>35</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/tokenizer/src/main/scala/com/ssdeep/fulcrum/Main.scala</url>
+          <url>file://$PROJECT_DIR$/tokenizer/src/main/scala/com/ssdeep/fulcrum/TokenizerMain.scala</url>
           <line>31</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/tokenizer/src/main/scala/com/ssdeep/fulcrum/Main.scala</url>
+          <url>file://$PROJECT_DIR$/tokenizer/src/main/scala/com/ssdeep/fulcrum/TokenizerMain.scala</url>
           <line>39</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
@@ -453,6 +476,36 @@
           <url>file://$PROJECT_DIR$/attention/src/main/scala/Main.scala</url>
           <line>36</line>
           <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/test/scala/com/ssdeep/fulcrum/attention/MultiheadAttentionSuite.scala</url>
+          <line>14</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/MultiheadAttention.scala</url>
+          <line>28</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/test/scala/com/ssdeep/fulcrum/attention/MultiheadAttentionSuite.scala</url>
+          <line>28</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/test/scala/com/ssdeep/fulcrum/attention/MultiheadAttentionSuite.scala</url>
+          <line>29</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/MultiheadAttention.scala</url>
+          <line>27</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/normalization/LayerNormalization.scala</url>
+          <line>14</line>
+          <option name="timeStamp" value="84" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

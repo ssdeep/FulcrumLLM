@@ -7,7 +7,7 @@ class CompactSelfAttention(dIn: Int, dOut: Int, qkvBias: Boolean = false) extend
    val Wkey = nn.Linear(dIn, dOut, qkvBias)
    val Wvalue = nn.Linear(dIn, dOut, qkvBias)
 
-   def forward(input: Tensor[Float32]): Tensor[Float32] =
+   def apply(input: Tensor[Float32]): Tensor[Float32] =
      val keys = input.map(Wkey.apply)
      val values = input.map(Wvalue.apply)
      val queries = input.map(Wquery.apply)

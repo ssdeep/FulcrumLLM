@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/project" />
             <option value="$PROJECT_DIR$/tokenizer" />
+            <option value="$PROJECT_DIR$/transformer" />
           </set>
         </option>
         <option name="sbtVersion" value="1.10.11" />

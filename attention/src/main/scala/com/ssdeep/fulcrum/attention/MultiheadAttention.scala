@@ -24,7 +24,7 @@ class MultiheadAttention(
     tensor = fromNative(pytorch.triu(pytorch.ones(contextLength, contextLength), 1))
   )
   
-  def forward(input: Tensor[Float32]): Tensor[Float32] =
+  def apply(input: Tensor[Float32]): Tensor[Float32] =
     val Seq(batch, numTokens, inputLength) = input.shape
     val keys = Wkey(input).view(batch, numTokens, numHeads, headDim).transpose(1, 2)
     val queries = Wquery(input).view(batch, numTokens, numHeads, headDim).transpose(1, 2)

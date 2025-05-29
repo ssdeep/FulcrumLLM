@@ -21,7 +21,7 @@ class CausalAttention(
     tensor = fromNative(pytorch.triu(pytorch.ones(contextLength, contextLength), 1))
   )
 
-  def forward(inputBatch: Tensor[Float32]): Tensor[Float32] =
+  def apply(inputBatch: Tensor[Float32]): Tensor[Float32] =
     val keys = Wkey(inputBatch)
     val values = Wvalue(inputBatch)
     val queries = Wquery.apply(inputBatch)

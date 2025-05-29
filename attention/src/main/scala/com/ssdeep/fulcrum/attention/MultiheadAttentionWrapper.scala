@@ -14,9 +14,9 @@ class MultiheadAttentionWrapper(
     dIn, dOut, contextLength, dropoutFactor, qkvBias
   ))
 
-  def forward(input: Tensor[Float32]): Tensor[Float32] =
+  def apply(input: Tensor[Float32]): Tensor[Float32] =
     torch.cat(
-      causalAttentionHeads.map(p => p.forward(input)),
+      causalAttentionHeads.map(p => p.apply(input)),
       dim = -1
     )
 
