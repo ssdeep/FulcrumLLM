@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaSbtSettings">
-    <option name="customVMPath" />
     <option name="linkedExternalProjectsSettings">
       <SbtProjectSettings>
         <option name="converterVersion" value="2" />
@@ -9,11 +8,15 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/attention" />
+            <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/project" />
+            <option value="$PROJECT_DIR$/tokenizer" />
+            <option value="$PROJECT_DIR$/transformer" />
           </set>
         </option>
         <option name="sbtVersion" value="1.10.11" />
-        <option name="separateProdAndTestSources" value="true" />
+        <option name="separateProdAndTestSources" value="false" />
       </SbtProjectSettings>
     </option>
   </component>

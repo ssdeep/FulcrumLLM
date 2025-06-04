@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <option name="separateProdTestSources" value="true" />
-    <profile name="sbt 1" modules="FulcrumLLM,FulcrumLLM.main,FulcrumLLM.test" />
+    <profile name="sbt 1" modules="FulcrumLLM,FulcrumLLM.attention,FulcrumLLM.core,FulcrumLLM.tokenizer,FulcrumLLM.transformer,fulcrumllm_8217,fulcrumllm_9047,tokenizers,tokenizers.main,tokenizers.test,transformer,transformer.main,transformer.test" />
   </component>
 </project>
