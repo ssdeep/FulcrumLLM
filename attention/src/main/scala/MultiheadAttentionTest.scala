@@ -7,7 +7,7 @@ import torch.{Float32, Tensor}
 
 import scala.io.Source
 
-object Main extends ClassNameLogger:
+object MultiheadAttentionTest extends ClassNameLogger:
   def main(args: Array[String]): Unit =
     val tokenizer = Tokenizer.buildDefaultO200kBase
     val textFromVerdict = Source.fromResource("The_Verdict.txt")

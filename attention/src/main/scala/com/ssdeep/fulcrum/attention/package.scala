@@ -1,4 +1,5 @@
 package com.ssdeep.fulcrum
+import org.bytedeco.pytorch.LongOptional
 import torch.*
 import torch.nn.*
 import org.bytedeco.pytorch.global.torch as pytorch
@@ -23,7 +24,13 @@ package object attention {
         t(ti).dot(j(ji)).toSeq
     }
     torch.Tensor.apply(newVector)
-
+  
+  extension[T <: DType](t: Tensor[T]) def span(row: Long, col: Long): Tensor[T] =
+    fromNative(
+      t.native
+      .slice(0L, LongOptional(), LongOptional(row), 1L)
+      .slice(1L, LongOptional(), LongOptional(col), 1L)
+    )
   extension (t: Tensor[Float32]) def %(o: Tensor[Float32]): Tensor[Float32] =
     fromNative(t.native.matmul(o.transpose(0,1).native))
 

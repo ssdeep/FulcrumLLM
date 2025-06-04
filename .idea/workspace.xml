@@ -113,13 +113,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.GPTModelTest.executor": "Debug",
     "Application.Main.executor": "Debug",
+    "Application.MultiheadAttentionTest.executor": "Debug",
     "Application.TokenizerBenchmark.executor": "Run",
+    "Application.TransformerBlockTest.executor": "Debug",
     "Application.TransformerMain.executor": "Debug",
     "Application.com.ssdeep.fulcrum.Main (1).executor": "Debug",
     "Application.com.ssdeep.fulcrum.Main.executor": "Debug",
     "Application.com.ssdeep.fulcrum.com.ssdeep.fulcrum.tokenizer.main.executor": "Debug",
     "Application.com.ssdeep.fulcrum.tokenizer.main.executor": "Debug",
+    "Application.com.ssdeep.fulcrum.transformer.TransformerMain.executor": "Run",
     "Application.main.executor": "Run",
     "NIXITCH_NIXPKGS_CONFIG": "",
     "NIXITCH_NIX_CONF_DIR": "",
@@ -131,7 +135,7 @@
     "Python.ExternalBenchmarks (1).executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "ScalaTest.MultiheadAttentionSuite.MultiheadAttention Context Vectors should satisfy dimensionality.executor": "Debug",
+    "ScalaTest.MultiheadAttentionSuite.MultiheadAttention Context Vectors should satisfy dimensionality.executor": "Run",
     "ScalaTest.TokenizerSuite.String should encode and decode without loss.executor": "Run",
     "ScalaTest.TokenizerSuite.executor": "Run",
     "git-widget-placeholder": "ssdeep/tokenizer",
@@ -156,7 +160,7 @@
       <recent name="$PROJECT_DIR$/src/main/scala/com/ssdeep/fulcrum" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TransformerMain">
+  <component name="RunManager" selected="Application.GPTModelTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -164,8 +168,17 @@
       <module />
       <method />
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="GPTModelTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssdeep.fulcrum.transformer.GPTModelTest" />
+      <module name="FulcrumLLM.transformer" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MultiheadAttentionTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="MultiheadAttentionTest" />
       <module name="FulcrumLLM.attention" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -173,8 +186,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransformerMain" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="TransformerMain" />
+    <configuration name="TransformerBlockTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssdeep.fulcrum.transformer.TransformerBlockTest" />
       <module name="FulcrumLLM.transformer" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -183,6 +196,15 @@
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.ssdeep.fulcrum.transformer.TransformerMain" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssdeep.fulcrum.transformer.TransformerMain" />
+      <module name="FulcrumLLM.transformer" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
@@ -227,65 +249,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TokenizerSuite" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="FulcrumLLM.tokenizer" />
-      <option name="VMParameters" value="" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="alternativeJrePath" />
-      <option name="alternativeJrePathEnabled" value="false" />
-      <option name="classpathModifications">
-        <list />
-      </option>
-      <option name="envFilePaths">
-        <list />
-      </option>
-      <option name="envs">
-        <map />
-      </option>
-      <option name="passParentEnvs" value="true" />
-      <option name="programParameters" value="" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="testKind" value="Class" />
-      <option name="workingDirectory" value="$PROJECT_DIR$" />
-      <option name="testClassPath" value="com.ssdeep.fulcrum.tokenizer.TokenizerSuite" />
-      <option name="workingDirectory" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TokenizerSuite.String should encode and decode without loss" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="FulcrumLLM.tokenizer" />
-      <option name="VMParameters" value="" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="alternativeJrePath" />
-      <option name="alternativeJrePathEnabled" value="false" />
-      <option name="classpathModifications">
-        <list />
-      </option>
-      <option name="envFilePaths">
-        <list />
-      </option>
-      <option name="envs">
-        <map />
-      </option>
-      <option name="passParentEnvs" value="true" />
-      <option name="programParameters" value="" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="testKind" value="Test name" />
-      <option name="workingDirectory" value="$PROJECT_DIR$" />
-      <option name="testClassPath" value="com.ssdeep.fulcrum.tokenizer.TokenizerSuite" />
-      <option name="testName" value="String should encode and decode without loss" />
-      <option name="workingDirectory" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -297,19 +260,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TransformerMain" />
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.GPTModelTest" />
+      <item itemvalue="Application.MultiheadAttentionTest" />
+      <item itemvalue="Application.TransformerBlockTest" />
+      <item itemvalue="Application.com.ssdeep.fulcrum.transformer.TransformerMain" />
       <item itemvalue="ScalaTest.MultiheadAttentionSuite.MultiheadAttention Context Vectors should satisfy dimensionality" />
-      <item itemvalue="ScalaTest.TokenizerSuite" />
-      <item itemvalue="ScalaTest.TokenizerSuite.String should encode and decode without loss" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TransformerMain" />
+        <item itemvalue="Application.GPTModelTest" />
+        <item itemvalue="Application.TransformerBlockTest" />
+        <item itemvalue="Application.MultiheadAttentionTest" />
         <item itemvalue="ScalaTest.MultiheadAttentionSuite.MultiheadAttention Context Vectors should satisfy dimensionality" />
-        <item itemvalue="ScalaTest.TokenizerSuite.String should encode and decode without loss" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="ScalaTest.TokenizerSuite" />
+        <item itemvalue="Application.com.ssdeep.fulcrum.transformer.TransformerMain" />
       </list>
     </recent_temporary>
   </component>
@@ -358,7 +321,7 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/attention/src/main/scala/Main.scala</url>
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/MultiheadAttentionTest.scala</url>
           <line>34</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
@@ -453,7 +416,7 @@
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/attention/src/main/scala/Main.scala</url>
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/MultiheadAttentionTest.scala</url>
           <line>29</line>
           <option name="timeStamp" value="58" />
         </line-breakpoint>
@@ -473,7 +436,7 @@
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/attention/src/main/scala/Main.scala</url>
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/MultiheadAttentionTest.scala</url>
           <line>36</line>
           <option name="timeStamp" value="74" />
         </line-breakpoint>
@@ -503,9 +466,72 @@
           <option name="timeStamp" value="79" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/normalization/LayerNormalization.scala</url>
+          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/package.scala</url>
+          <line>8</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/transformer/src/test/scala/com/ssdeep/fulcrum/transformer/TransformerBlockTest.scala</url>
+          <line>10</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/transformer/src/test/scala/com/ssdeep/fulcrum/transformer/TransformerBlockTest.scala</url>
+          <line>9</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/MultiheadAttention.scala</url>
+          <line>34</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/MultiheadAttention.scala</url>
+          <line>29</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/MultiheadAttention.scala</url>
+          <line>30</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/MultiheadAttention.scala</url>
+          <line>32</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/MultiheadAttentionTest.scala</url>
+          <line>32</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/MultiheadAttention.scala</url>
+          <line>38</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/MultiheadAttention.scala</url>
+          <line>39</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/transformer/src/test/scala/com/ssdeep/fulcrum/transformer/TransformerBlockTest.scala</url>
+          <line>11</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/transformer/src/test/scala/com/ssdeep/fulcrum/transformer/TransformerBlockTest.scala</url>
+          <line>12</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/transformer/src/test/scala/com/ssdeep/fulcrum/transformer/TransformerBlockTest.scala</url>
           <line>14</line>
-          <option name="timeStamp" value="84" />
+          <option name="timeStamp" value="99" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

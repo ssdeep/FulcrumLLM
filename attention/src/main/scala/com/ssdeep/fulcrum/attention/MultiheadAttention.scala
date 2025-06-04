@@ -14,11 +14,11 @@ class MultiheadAttention(
                         ) extends torch.nn.Module:
   require(dOut % numHeads == 0, s"output dimension $dOut must be divisible by $numHeads")
   val headDim: Int = dOut/numHeads
-  val Wquery = nn.Linear(dIn, dOut, qkvBias)
-  val Wkey = nn.Linear(dIn, dOut, qkvBias)
-  val Wvalue = nn.Linear(dIn, dOut, qkvBias)
-  val dropout = nn.Dropout(p = dropoutFactor)
-  val outProjection = nn.Linear(dOut, dOut)
+  val Wquery = register(nn.Linear(dIn, dOut, qkvBias))
+  val Wkey = register(nn.Linear(dIn, dOut, qkvBias))
+  val Wvalue = register(nn.Linear(dIn, dOut, qkvBias))
+  val dropout = register(nn.Dropout(p = dropoutFactor))
+  val outProjection = register(nn.Linear(dOut, dOut))
   registerBuffer(
     "mask",
     tensor = fromNative(pytorch.triu(pytorch.ones(contextLength, contextLength), 1))
@@ -31,7 +31,7 @@ class MultiheadAttention(
     val values = Wvalue(input).view(batch, numTokens, numHeads, headDim).transpose(1, 2)
     
     var attnScores = queries `@` keys.transpose(2, 3)
-    val bufferedMask = this.namedBuffers(true)("mask").to(torch.bool)
+    val bufferedMask = this.namedBuffers(true)("mask").to(torch.bool).span(numTokens, numTokens)
     attnScores = attnScores.maskedFill(
       bufferedMask,
       Float.NegativeInfinity

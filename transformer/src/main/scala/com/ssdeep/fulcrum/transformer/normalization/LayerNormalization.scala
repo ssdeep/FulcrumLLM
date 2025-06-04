@@ -2,7 +2,7 @@ package com.ssdeep.fulcrum.transformer.normalization
 
 import torch.{Float32, Tensor}
 
-class LayerNormalization(embedDim: Int) extends torch.nn.Module:
+case class LayerNormalization(embedDim: Int) extends torch.nn.Module:
   private val eps = (1e-5).toFloat
 
   private val scale = registerParameter(torch.ones(embedDim))

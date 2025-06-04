@@ -1,9 +1,12 @@
+package com.ssdeep.fulcrum.transformer
+
 import com.ssdeep.fulcrum.tokenizer.Tokenizer
 import com.ssdeep.fulcrum.transformer.MiniGPT
 import com.ssdeep.fulcrum.transformer.config.GPTConfig
+import com.ssdeep.fulcrum.transformer.nn.{FeedForward, NLayeredDeepNeuralNetwork}
 import com.ssdeep.fulcrum.transformer.normalization.LayerNormalization
 import com.typesafe.config.ConfigFactory
-import torch.{Tensor, Float32}
+import torch.{Float32, Tensor}
 
 object TransformerMain:
   def meanVar(x: Tensor[Float32]): (Tensor[Float32], Tensor[Float32]) =
@@ -44,6 +47,17 @@ object TransformerMain:
     println(mean1)
     println("Variance")
     println(variance1)
+    val ffn = FeedForward(gptConfig)(answers)
+    println("Feed Forward")
+    println(ffn)
+    val nLayeredModel = NLayeredDeepNeuralNetwork(Array(gptConfig.embedDim, gptConfig.embedDim, gptConfig.embedDim, 1), true)
+    val nLayeredNoShortCut = NLayeredDeepNeuralNetwork(Array(gptConfig.embedDim, gptConfig.embedDim, gptConfig.embedDim, 1),
+      false)
+    val copyAnswers = layerNorm(batchExample2)
+    println("Original answers")
+    nLayeredModel.print_gradients(answers)
+    println("copy answers")
+    nLayeredNoShortCut.print_gradients(copyAnswers)
 
 //    println(s"Variance: ${out}")
   }
