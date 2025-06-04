@@ -31,7 +31,7 @@ class MultiheadAttention(
     val values = Wvalue(input).view(batch, numTokens, numHeads, headDim).transpose(1, 2)
     
     var attnScores = queries `@` keys.transpose(2, 3)
-    val bufferedMask = this.namedBuffers(true)("mask").to(torch.bool).span(numTokens, numTokens)
+    val bufferedMask = this.namedBuffers(true)("mask").to(torch.bool).span(Some(numTokens), Some(numTokens))
     attnScores = attnScores.maskedFill(
       bufferedMask,
       Float.NegativeInfinity

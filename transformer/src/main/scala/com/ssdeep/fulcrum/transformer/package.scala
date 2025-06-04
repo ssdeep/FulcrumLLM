@@ -23,5 +23,4 @@ package object transformer {
         case (w, value) =>
           println(s"$w and gradient mean of ${value.grad.get.abs.mean.item}")
       }
-
 }

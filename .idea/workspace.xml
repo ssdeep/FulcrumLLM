@@ -116,6 +116,7 @@
     "Application.GPTModelTest.executor": "Debug",
     "Application.Main.executor": "Debug",
     "Application.MultiheadAttentionTest.executor": "Debug",
+    "Application.SimpleTextGeneratorTest.executor": "Debug",
     "Application.TokenizerBenchmark.executor": "Run",
     "Application.TransformerBlockTest.executor": "Debug",
     "Application.TransformerMain.executor": "Debug",
@@ -160,7 +161,7 @@
       <recent name="$PROJECT_DIR$/src/main/scala/com/ssdeep/fulcrum" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GPTModelTest">
+  <component name="RunManager" selected="Application.SimpleTextGeneratorTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -186,6 +187,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SimpleTextGeneratorTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssdeep.fulcrum.transformer.SimpleTextGeneratorTest" />
+      <module name="FulcrumLLM.transformer" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TransformerBlockTest" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.ssdeep.fulcrum.transformer.TransformerBlockTest" />
       <module name="FulcrumLLM.transformer" />
@@ -196,15 +206,6 @@
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.ssdeep.fulcrum.transformer.TransformerMain" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.ssdeep.fulcrum.transformer.TransformerMain" />
-      <module name="FulcrumLLM.transformer" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
@@ -262,17 +263,17 @@
     <list>
       <item itemvalue="Application.GPTModelTest" />
       <item itemvalue="Application.MultiheadAttentionTest" />
+      <item itemvalue="Application.SimpleTextGeneratorTest" />
       <item itemvalue="Application.TransformerBlockTest" />
-      <item itemvalue="Application.com.ssdeep.fulcrum.transformer.TransformerMain" />
       <item itemvalue="ScalaTest.MultiheadAttentionSuite.MultiheadAttention Context Vectors should satisfy dimensionality" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SimpleTextGeneratorTest" />
         <item itemvalue="Application.GPTModelTest" />
         <item itemvalue="Application.TransformerBlockTest" />
         <item itemvalue="Application.MultiheadAttentionTest" />
         <item itemvalue="ScalaTest.MultiheadAttentionSuite.MultiheadAttention Context Vectors should satisfy dimensionality" />
-        <item itemvalue="Application.com.ssdeep.fulcrum.transformer.TransformerMain" />
       </list>
     </recent_temporary>
   </component>
@@ -446,11 +447,6 @@
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/MultiheadAttention.scala</url>
-          <line>28</line>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/attention/src/test/scala/com/ssdeep/fulcrum/attention/MultiheadAttentionSuite.scala</url>
           <line>28</line>
           <option name="timeStamp" value="77" />
@@ -459,11 +455,6 @@
           <url>file://$PROJECT_DIR$/attention/src/test/scala/com/ssdeep/fulcrum/attention/MultiheadAttentionSuite.scala</url>
           <line>29</line>
           <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/MultiheadAttention.scala</url>
-          <line>27</line>
-          <option name="timeStamp" value="79" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/package.scala</url>
@@ -484,39 +475,9 @@
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/MultiheadAttention.scala</url>
-          <line>34</line>
-          <option name="timeStamp" value="90" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/MultiheadAttention.scala</url>
-          <line>29</line>
-          <option name="timeStamp" value="91" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/MultiheadAttention.scala</url>
-          <line>30</line>
-          <option name="timeStamp" value="92" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/MultiheadAttention.scala</url>
-          <line>32</line>
-          <option name="timeStamp" value="93" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/attention/src/main/scala/MultiheadAttentionTest.scala</url>
           <line>32</line>
           <option name="timeStamp" value="94" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/MultiheadAttention.scala</url>
-          <line>38</line>
-          <option name="timeStamp" value="95" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/attention/src/main/scala/com/ssdeep/fulcrum/attention/MultiheadAttention.scala</url>
-          <line>39</line>
-          <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/transformer/src/test/scala/com/ssdeep/fulcrum/transformer/TransformerBlockTest.scala</url>
@@ -532,6 +493,26 @@
           <url>file://$PROJECT_DIR$/transformer/src/test/scala/com/ssdeep/fulcrum/transformer/TransformerBlockTest.scala</url>
           <line>14</line>
           <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/generator/SimpleTextGenerator.scala</url>
+          <line>14</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/generator/SimpleTextGenerator.scala</url>
+          <line>18</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/generator/SimpleTextGenerator.scala</url>
+          <line>22</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/generator/SimpleTextGenerator.scala</url>
+          <line>23</line>
+          <option name="timeStamp" value="104" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

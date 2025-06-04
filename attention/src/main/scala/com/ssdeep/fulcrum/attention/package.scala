@@ -24,13 +24,28 @@ package object attention {
         t(ti).dot(j(ji)).toSeq
     }
     torch.Tensor.apply(newVector)
-  
-  extension[T <: DType](t: Tensor[T]) def span(row: Long, col: Long): Tensor[T] =
+
+  /**
+   * Extract a 2D tensor from a larger 2D tensor spanning from (0 to row, 0 to col)
+   * Equivalent to python tensor[:row, :col]
+   */
+  extension[T <: DType](t: Tensor[T]) def span(row: Option[Long], col: Option[Long]): Tensor[T] = {
+    require(t.shape.length == 2)
+    val Seq(rowMax, colMax) = t.shape
+    val rowSpan = row.map {
+      case p if Math.abs(p) > rowMax => LongOptional()
+      case p => LongOptional(p)
+    }.getOrElse(LongOptional())
+    val colSpan = col.map {
+      case p if Math.abs(p) > colMax => LongOptional()
+      case p => LongOptional(p)
+    }.getOrElse(LongOptional())
     fromNative(
       t.native
-      .slice(0L, LongOptional(), LongOptional(row), 1L)
-      .slice(1L, LongOptional(), LongOptional(col), 1L)
+      .slice(0L, LongOptional(), rowSpan, 1L)
+      .slice(1L, LongOptional(), colSpan, 1L)
     )
+  }
   extension (t: Tensor[Float32]) def %(o: Tensor[Float32]): Tensor[Float32] =
     fromNative(t.native.matmul(o.transpose(0,1).native))
 
