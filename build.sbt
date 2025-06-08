@@ -42,3 +42,10 @@ lazy val transformer = (project in file("transformer"))
   .dependsOn(attention)
   .aggregate(tokenizer, attention)
 
+lazy val training = (project in file("training"))
+  .settings(
+    name := "training"
+  )
+  .dependsOn(transformer)
+  .aggregate(transformer)
+

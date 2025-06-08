@@ -22,7 +22,7 @@ class MultiheadAttentionSuite extends AnyFlatSpec with ScalaCheckPropertyChecks 
            batchSize = BATCH_SIZE
          )
          torch.manualSeed(128L)
-         var datasetIterator  = gptDataset.dataLoader.iterator.iterator
+         var datasetIterator  = gptDataset.dataLoader
          var (batch, _) = datasetIterator.next()
          var batchEmbeddings = gptDataset.inputEmbeddings(batch)
          val multiHeadAttn = MultiheadAttention(

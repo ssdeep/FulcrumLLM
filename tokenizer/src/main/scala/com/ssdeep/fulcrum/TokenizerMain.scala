@@ -24,20 +24,20 @@ object TokenizerMain extends ClassNameLogger:
 
     torch.manualSeed(128L)
 
-    val dataIter = gptDataset.dataLoader.iterator
-    val (inputs, targets) = dataIter.next()
-    val tokenEmbeddings: Tensor[Float32] = gptDataset ~> inputs // token embeddings
-    val posEmbeddings = gptDataset.pos(torch.arange(end = MAX_LENGTH))
-
-    logger.info(s"token embeddings shape: $tokenEmbeddings")
-    logger.info(tokenizer.decode(inputs.toSeq.toList))
-//    println(s"position embeddings: $posEmbeddings")
-//    println("Token Embedding Layer")
-//    println(gptDataset.tokenEmbeddingLayer)
-//    println("Applying embedding")
-//    println(tokenEmbeddings)
-//    println("Applying token and positional embeddings to get input embeddings")
-    val inputEmbeddings = tokenEmbeddings + posEmbeddings
+    val dataIter = gptDataset.dataLoader//.iterator
+//    val (inputs, targets) = dataIter.next()
+//    val tokenEmbeddings: Tensor[Float32] = gptDataset ~> inputs // token embeddings
+//    val posEmbeddings = gptDataset.pos(torch.arange(end = MAX_LENGTH))
+//
+//    logger.info(s"token embeddings shape: $tokenEmbeddings")
+//    logger.info(tokenizer.decode(inputs.toSeq.toList))
+////    println(s"position embeddings: $posEmbeddings")
+////    println("Token Embedding Layer")
+////    println(gptDataset.tokenEmbeddingLayer)
+////    println("Applying embedding")
+////    println(tokenEmbeddings)
+////    println("Applying token and positional embeddings to get input embeddings")
+//    val inputEmbeddings = tokenEmbeddings + posEmbeddings
 //    println(s"Input Embeddding shape: ${inputEmbeddings.shape}")
 //    println(s"Starting Input Embeddings: ${inputEmbeddings}")
     println("Done")

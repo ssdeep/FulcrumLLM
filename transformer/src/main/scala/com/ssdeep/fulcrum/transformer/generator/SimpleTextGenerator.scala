@@ -6,7 +6,7 @@ import torch.{DType, Float32, Int64, Tensor, noGrad}
 
 case class SimpleTextGenerator(model: GPTModel):
 
-  def generateSimpleText(idx: Tensor[Int64], maxNewTokens: Int, contextLength: Int) =
+  def generateSimpleText(idx: Tensor[Int64], maxNewTokens: Int, contextLength: Int): Tensor[Int64] =
     var idxTemp = idx
     (0 until maxNewTokens).foreach {
       i =>

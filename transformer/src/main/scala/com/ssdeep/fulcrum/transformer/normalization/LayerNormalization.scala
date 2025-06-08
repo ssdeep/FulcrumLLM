@@ -12,4 +12,6 @@ case class LayerNormalization(embedDim: Int) extends torch.nn.Module:
     val mean = input.mean(dim = -1, keepdim = true)
     val variance: Tensor[Float32] = torch.variance[Float32](input, dim = -1, keepdim = true)
     val normalized = (input - mean)/torch.sqrt[Float32](variance + eps)
+    variance.native.deallocate()
+    mean.native.deallocate()
     scale * normalized + shift

@@ -32,6 +32,9 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/training">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/transformer">
       <ProjectState />
     </projectState>
@@ -111,48 +114,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.GPTModelTest.executor": "Debug",
-    "Application.Main.executor": "Debug",
-    "Application.MultiheadAttentionTest.executor": "Debug",
-    "Application.SimpleTextGeneratorTest.executor": "Debug",
-    "Application.TokenizerBenchmark.executor": "Run",
-    "Application.TransformerBlockTest.executor": "Debug",
-    "Application.TransformerMain.executor": "Debug",
-    "Application.com.ssdeep.fulcrum.Main (1).executor": "Debug",
-    "Application.com.ssdeep.fulcrum.Main.executor": "Debug",
-    "Application.com.ssdeep.fulcrum.com.ssdeep.fulcrum.tokenizer.main.executor": "Debug",
-    "Application.com.ssdeep.fulcrum.tokenizer.main.executor": "Debug",
-    "Application.com.ssdeep.fulcrum.transformer.TransformerMain.executor": "Run",
-    "Application.main.executor": "Run",
-    "NIXITCH_NIXPKGS_CONFIG": "",
-    "NIXITCH_NIX_CONF_DIR": "",
-    "NIXITCH_NIX_OTHER_STORES": "",
-    "NIXITCH_NIX_PATH": "",
-    "NIXITCH_NIX_PROFILES": "",
-    "NIXITCH_NIX_REMOTE": "",
-    "NIXITCH_NIX_USER_PROFILE_DIR": "",
-    "Python.ExternalBenchmarks (1).executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "ScalaTest.MultiheadAttentionSuite.MultiheadAttention Context Vectors should satisfy dimensionality.executor": "Run",
-    "ScalaTest.TokenizerSuite.String should encode and decode without loss.executor": "Run",
-    "ScalaTest.TokenizerSuite.executor": "Run",
-    "git-widget-placeholder": "ssdeep/tokenizer",
-    "last_opened_file_path": "/Users/dooby1/storch/FulcrumLLM/build.sbt",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.scala.root",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.GPTModelTest.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.MultiheadAttentionTest.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.SimpleTextGeneratorTest.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.TokenizerBenchmark.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TrainingMain.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.TransformerBlockTest.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.TransformerMain.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.com.ssdeep.fulcrum.Main (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Application.com.ssdeep.fulcrum.Main.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.com.ssdeep.fulcrum.com.ssdeep.fulcrum.tokenizer.main.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.com.ssdeep.fulcrum.tokenizer.main.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.com.ssdeep.fulcrum.transformer.TransformerMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main.executor&quot;: &quot;Run&quot;,
+    &quot;NIXITCH_NIXPKGS_CONFIG&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_CONF_DIR&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_OTHER_STORES&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_PATH&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_PROFILES&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_REMOTE&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_USER_PROFILE_DIR&quot;: &quot;&quot;,
+    &quot;Python.ExternalBenchmarks (1).executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;ScalaTest.MultiheadAttentionSuite.MultiheadAttention Context Vectors should satisfy dimensionality.executor&quot;: &quot;Run&quot;,
+    &quot;ScalaTest.TokenizerSuite.String should encode and decode without loss.executor&quot;: &quot;Run&quot;,
+    &quot;ScalaTest.TokenizerSuite.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ssdeep/tokenizer&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/dooby1/storch/FulcrumLLM/build.sbt&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;profiler.jvm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tokenizer" />
@@ -160,8 +164,11 @@
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/scala/com/ssdeep/fulcrum" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ssdeep.fulcrum.training" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.SimpleTextGeneratorTest">
+  <component name="RunManager" selected="Application.TrainingMain">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -172,7 +179,6 @@
     <configuration name="GPTModelTest" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.ssdeep.fulcrum.transformer.GPTModelTest" />
       <module name="FulcrumLLM.transformer" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -181,7 +187,6 @@
     <configuration name="MultiheadAttentionTest" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="MultiheadAttentionTest" />
       <module name="FulcrumLLM.attention" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -190,7 +195,15 @@
     <configuration name="SimpleTextGeneratorTest" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.ssdeep.fulcrum.transformer.SimpleTextGeneratorTest" />
       <module name="FulcrumLLM.transformer" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrainingMain" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssdeep.fulcrum.training.TrainingMain" />
+      <module name="FulcrumLLM.training" />
+      <option name="VM_PARAMETERS" value="-Xmx10G -XX:MaxDirectMemorySize=5g -XX:+UseConcMarkSweepGC" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -199,7 +212,6 @@
     <configuration name="TransformerBlockTest" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.ssdeep.fulcrum.transformer.TransformerBlockTest" />
       <module name="FulcrumLLM.transformer" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -220,36 +232,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiheadAttentionSuite.MultiheadAttention Context Vectors should satisfy dimensionality" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="FulcrumLLM.attention" />
-      <option name="VMParameters" value="" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="alternativeJrePath" />
-      <option name="alternativeJrePathEnabled" value="false" />
-      <option name="classpathModifications">
-        <list />
-      </option>
-      <option name="envFilePaths">
-        <list />
-      </option>
-      <option name="envs">
-        <map />
-      </option>
-      <option name="passParentEnvs" value="true" />
-      <option name="programParameters" value="" />
-      <option name="projectPathOnTarget" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="testKind" value="Test name" />
-      <option name="workingDirectory" value="$PROJECT_DIR$" />
-      <option name="testClassPath" value="com.ssdeep.fulcrum.attention.MultiheadAttentionSuite" />
-      <option name="testName" value="MultiheadAttention Context Vectors should satisfy dimensionality" />
-      <option name="workingDirectory" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -264,16 +246,16 @@
       <item itemvalue="Application.GPTModelTest" />
       <item itemvalue="Application.MultiheadAttentionTest" />
       <item itemvalue="Application.SimpleTextGeneratorTest" />
+      <item itemvalue="Application.TrainingMain" />
       <item itemvalue="Application.TransformerBlockTest" />
-      <item itemvalue="ScalaTest.MultiheadAttentionSuite.MultiheadAttention Context Vectors should satisfy dimensionality" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SimpleTextGeneratorTest" />
+        <item itemvalue="Application.TrainingMain" />
         <item itemvalue="Application.GPTModelTest" />
+        <item itemvalue="Application.SimpleTextGeneratorTest" />
         <item itemvalue="Application.TransformerBlockTest" />
         <item itemvalue="Application.MultiheadAttentionTest" />
-        <item itemvalue="ScalaTest.MultiheadAttentionSuite.MultiheadAttention Context Vectors should satisfy dimensionality" />
       </list>
     </recent_temporary>
   </component>
@@ -495,24 +477,117 @@
           <option name="timeStamp" value="99" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/generator/SimpleTextGenerator.scala</url>
-          <line>14</line>
-          <option name="timeStamp" value="101" />
+          <url>file://$PROJECT_DIR$/training/src/test/scala/com/ssdeep/fulcrum/training/TrainingSimpleTest.scala</url>
+          <line>32</line>
+          <option name="timeStamp" value="109" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/generator/SimpleTextGenerator.scala</url>
-          <line>18</line>
-          <option name="timeStamp" value="102" />
+          <url>file://$PROJECT_DIR$/training/src/test/scala/com/ssdeep/fulcrum/training/TrainingSimpleTest.scala</url>
+          <line>43</line>
+          <option name="timeStamp" value="110" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/generator/SimpleTextGenerator.scala</url>
-          <line>22</line>
-          <option name="timeStamp" value="103" />
+          <url>file://$PROJECT_DIR$/training/src/test/scala/com/ssdeep/fulcrum/training/TrainingSimpleTest.scala</url>
+          <line>42</line>
+          <option name="timeStamp" value="111" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/generator/SimpleTextGenerator.scala</url>
+          <url>file://$PROJECT_DIR$/training/src/test/scala/com/ssdeep/fulcrum/training/TrainingSimpleTest.scala</url>
+          <line>48</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/training/src/test/scala/com/ssdeep/fulcrum/training/TrainingSimpleTest.scala</url>
+          <line>51</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
+          <line>40</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
+          <line>28</line>
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
+          <line>78</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
+          <line>76</line>
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
+          <line>19</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
+          <line>30</line>
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
+          <line>38</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
+          <line>64</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
+          <line>70</line>
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
+          <line>32</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/core/src/main/scala/com/ssdeep/fulcrum/core/package.scala</url>
+          <line>9</line>
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/core/src/main/scala/com/ssdeep/fulcrum/core/package.scala</url>
+          <line>13</line>
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/TransformerBlock.scala</url>
           <line>23</line>
-          <option name="timeStamp" value="104" />
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
+          <line>35</line>
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
+          <line>36</line>
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
+          <line>20</line>
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
+          <line>22</line>
+          <option name="timeStamp" value="171" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
