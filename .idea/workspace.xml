@@ -203,7 +203,7 @@
     <configuration name="TrainingMain" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.ssdeep.fulcrum.training.TrainingMain" />
       <module name="FulcrumLLM.training" />
-      <option name="VM_PARAMETERS" value="-Xmx10G -XX:MaxDirectMemorySize=5g -XX:+UseConcMarkSweepGC" />
+      <option name="VM_PARAMETERS" value="-Xmx15G -XX:MaxDirectMemorySize=5G -XX:+UseConcMarkSweepGC -XX:NativeMemoryTracking=summary -XX:+UnlockDiagnosticVMOptions -XX:+PrintNMTStatistics" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -503,66 +503,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
-          <line>40</line>
-          <option name="timeStamp" value="130" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
-          <line>28</line>
+          <line>34</line>
           <option name="timeStamp" value="131" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
-          <line>78</line>
-          <option name="timeStamp" value="132" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
-          <line>76</line>
+          <line>169</line>
           <option name="timeStamp" value="133" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
-          <line>19</line>
-          <option name="timeStamp" value="136" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
-          <line>30</line>
+          <line>36</line>
           <option name="timeStamp" value="139" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
-          <line>38</line>
-          <option name="timeStamp" value="140" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
-          <line>64</line>
-          <option name="timeStamp" value="141" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
-          <line>70</line>
+          <line>163</line>
           <option name="timeStamp" value="142" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
-          <line>32</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="153" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/core/src/main/scala/com/ssdeep/fulcrum/core/package.scala</url>
-          <line>9</line>
-          <option name="timeStamp" value="154" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/core/src/main/scala/com/ssdeep/fulcrum/core/package.scala</url>
-          <line>13</line>
-          <option name="timeStamp" value="155" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/TransformerBlock.scala</url>
@@ -571,23 +528,88 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
-          <line>35</line>
-          <option name="timeStamp" value="167" />
+          <line>191</line>
+          <option name="timeStamp" value="176" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
-          <line>36</line>
-          <option name="timeStamp" value="168" />
+          <line>109</line>
+          <option name="timeStamp" value="179" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
+          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/generator/SimpleTextGenerator.scala</url>
+          <line>14</line>
+          <option name="timeStamp" value="181" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/generator/SimpleTextGenerator.scala</url>
+          <line>12</line>
+          <option name="timeStamp" value="182" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/generator/SimpleTextGenerator.scala</url>
           <line>20</line>
-          <option name="timeStamp" value="169" />
+          <option name="timeStamp" value="185" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/generator/SimpleTextGenerator.scala</url>
+          <line>21</line>
+          <option name="timeStamp" value="186" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/generator/SimpleTextGenerator.scala</url>
+          <line>22</line>
+          <option name="timeStamp" value="187" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/generator/SimpleTextGenerator.scala</url>
+          <line>24</line>
+          <option name="timeStamp" value="188" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/generator/SimpleTextGenerator.scala</url>
+          <line>23</line>
+          <option name="timeStamp" value="189" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/generator/SimpleTextGenerator.scala</url>
+          <line>25</line>
+          <option name="timeStamp" value="190" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/GPTModel.scala</url>
+          <line>46</line>
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/transformer/src/main/scala/com/ssdeep/fulcrum/transformer/GPTModel.scala</url>
+          <line>45</line>
+          <option name="timeStamp" value="196" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
-          <line>22</line>
-          <option name="timeStamp" value="171" />
+          <line>29</line>
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
+          <line>30</line>
+          <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
+          <line>117</line>
+          <option name="timeStamp" value="199" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
+          <line>121</line>
+          <option name="timeStamp" value="200" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/training/src/main/scala/com/ssdeep/fulcrum/training/TrainingMain.scala</url>
+          <line>122</line>
+          <option name="timeStamp" value="201" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

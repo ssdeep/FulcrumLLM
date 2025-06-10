@@ -64,3 +64,20 @@ Time taken: 179.872 seconds
 Throughput: 226124.85 tokens/sec
 Incorrect tokenizations: 0
 ```
+
+## Multi-head Attention
+The Multi-head Attention module is a Scala implementation of the multi-head attention mechanism, which is a key component of the Transformer architecture. It allows the model to focus on different parts of the input sequence simultaneously, improving its ability to capture complex dependencies.
+The module includes a step-by-step progression of attention mechanisms following the chapter 4 of Raschka's book, starting from a simple dot-product attention to a more complex multi-head attention mechanism.
+
+
+## Transformer 
+The Transformer module is a Scala implementation of the Transformer architecture, which is the backbone of many modern LLMs. It includes components such as multi-head self-attention, position-wise feed-forward networks, and layer normalization.
+
+
+## Training
+The training code is based on the Storch library and follows the PyTorch API closely. The training loop is designed to be flexible and allows for easy modification of the model, loss function, and optimizer.
+Here is an example configuration for training a simple model:
+
+```hocon
+
+```

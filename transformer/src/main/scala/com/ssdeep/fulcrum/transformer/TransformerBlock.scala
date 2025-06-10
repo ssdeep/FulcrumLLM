@@ -34,5 +34,5 @@ class TransformerBlock(cfg: GPTConfig) extends TensorModule[Float32]:
     shortcut = ff(shortcut)
     shortcut = dropShortCut(shortcut)
     shortcut = shortcut + y
-    y.native.deallocate()
+//    y.native.close()
     shortcut

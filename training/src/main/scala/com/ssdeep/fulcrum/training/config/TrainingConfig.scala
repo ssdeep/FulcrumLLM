@@ -5,6 +5,7 @@ import com.typesafe.config.Config
 case class TrainingConfig(
                            file: String,
                            ratio: Double,
+                           batchSize: Int,
                            limit: Option[Int]
                          )
 
@@ -13,5 +14,6 @@ object TrainingConfig:
     val trainingConfig = config.getConfig("training-config")
     val limit = if trainingConfig.hasPath("limit") then Some(trainingConfig.getInt("limit")) else None
     TrainingConfig(trainingConfig.getString("file"), trainingConfig.getDouble("ratio"),
+      trainingConfig.getInt("batch_size"),
       limit
       )

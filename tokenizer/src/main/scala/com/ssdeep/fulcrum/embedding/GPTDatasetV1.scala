@@ -24,8 +24,8 @@ case class GPTDatasetV1(tokenIds: List[Long], tokenizer: Tokenizer, maxLength: I
                         dimensionality: Int, shuffle: Boolean):
   private val extraTokensToDrop = tokenIds.length % maxLength // if the context length doesn't evenly divide the input
   private val rawBatchedTokens = tokenIds.dropRight(extraTokensToDrop).sliding(maxLength, stride).toSeq
-  private val inputChunks = rawBatchedTokens.dropRight(1).iterator.grouped(batchSize).map(Tensor(_))
-  private val targetChunks = rawBatchedTokens.drop(1).iterator.grouped(batchSize).map(Tensor(_))
+  private val inputChunks = rawBatchedTokens.dropRight(1).grouped(batchSize).map(Tensor(_)).iterator.to(Iterable)
+  private val targetChunks = rawBatchedTokens.drop(1).iterator.grouped(batchSize).map(Tensor(_)).iterator.to(Iterable)
   private val totalChunks = rawBatchedTokens.length / batchSize
 
   private lazy val tokenEmbeddingLayer = new torch.nn.Embedding(tokenizer.tokenIdMap.size, dimensionality)

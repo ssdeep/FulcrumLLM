@@ -30,8 +30,8 @@ package object attention {
    * Equivalent to python tensor[:row, :col]
    */
   extension[T <: DType](t: Tensor[T]) def span(row: Option[Long], col: Option[Long]): Tensor[T] = {
-    require(t.shape.length == 2)
-    val Seq(rowMax, colMax) = t.shape
+//    require(t.shape.length == 2)
+    val Seq(rowMax, colMax) =if t.shape.length > 1 then t.shape else (t.shape :+ 0)
     val rowSpan = row.map {
       case p if Math.abs(p) > rowMax => LongOptional()
       case p => LongOptional(p)
